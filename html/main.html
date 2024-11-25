@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Theater</title>
+    <link rel="stylesheet" href="../styles/styleMain.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>AcmePlex Cineplex</h1>
+        <nav>
+            <ul>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#showtimes">Showtimes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>AcmePlex Cineplex</h2>
+            <p>Lights, Cameras, Unforgettable Action!.</p>
+            <button onclick="scrollToMovies()">Browse Movies</button>
+        </section>
+
+        <section id="movies">
+            <h2>Now Showing</h2>
+            <div class="movie-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 AcmePlex | All Rights Reserved</p>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
