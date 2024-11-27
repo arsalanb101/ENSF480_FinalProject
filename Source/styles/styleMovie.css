@@ -1,3 +1,11 @@
+.logo {
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Add spacing below the logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -32,4 +40,21 @@ header {
     border-radius: 5px;
     max-width: 200px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#ticket-dates li {
+    background-color: #6A1E55;
+    color: white;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#ticket-dates li:hover {
+    background-color: #3B1C32;
 }

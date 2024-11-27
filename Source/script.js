@@ -79,12 +79,26 @@ function loadMovieDetails() {
     movie.tickets.forEach(date => {
         const li = document.createElement('li');
         li.textContent = date;
+        li.onclick = () => {
+            alert(`You selected ${date} for ${movie.title}!`);
+        };
         ticketDates.appendChild(li);
     });
+    
 }
 
-// Automatically run functions based on the current page
-document.addEventListener('DOMContentLoaded', () => {
+function loadHeroSection() {
+    const heroSection = document.querySelector(".hero");
+    const featuredMovie = movies[0]; // First movie as the featured one
+    if (!heroSection) return;
+
+    heroSection.style.backgroundImage = `url(${featuredMovie.poster})`;
+    heroSection.querySelector("h2").textContent = featuredMovie.title;
+    heroSection.querySelector("p").textContent = featuredMovie.description;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
     loadMovies();
     loadMovieDetails();
+    loadHeroSection();
 });
