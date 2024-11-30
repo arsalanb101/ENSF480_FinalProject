@@ -1,0 +1,61 @@
+.logo {
+    max-width: 150px; /* Adjust the size as needed */
+    margin-bottom: 20px; /* Add spacing below the logo */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #3B1C32, #6A1E55);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    text-align: center;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+.login-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.login-container p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+button {
+    background-color: white;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffe4d9;
+    transform: translateY(-3px);
+}
